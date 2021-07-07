@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ConcreteCalculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Concrete Slab Calculator</h1>
+      <h4>Enter the dimensions for a concrete slab:</h4>
+      <form action="">
+        <label for="length">Length (feet): </label>
+        <input type="number" id="length" step=".1" />
+        <label for="width">Width (feet):</label>
+        <input type="number" id="width" step=".1" />
+        <label for="height">Height (inches):</label>
+        <input type="number" id="height" step=".1" />
+      </form>
+      <br />
+      <button type="button">Calculate</button>
+
+      <p>Your volume is: <span type="number" id="volume"></span></p>
+      <p>
+        Number of 60lb bags you will need: <span class="bagNumberSmall"></span>
+      </p>
+      <p>
+        Number of 80lb bags you will need: <span class="bagNumberLarge"> </span>
+      </p>
+      <p>Order by the truckload: <span type="number" class="yards"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+    Option to use radio buttons to select bag size and then loop over with for loop 
+    <ul>
+            <li><input type="radio" name="bagSize" class="bagSizeSmall"value="60"> 60lb. <br></li>
+            <li><input type="radio" name="bagSize" class="bagSizeLarge" value="80"> 80lb. <br></li>
+        </ul> -->
